@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Aurelian Fine Dining</title>
+  <meta name="description" content="Explore our seasonal menu featuring the finest ingredients prepared with passion and precision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <span class="loader-text">AURELIAN</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        Aurelian
+        <span>Fine Dining</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="index.html#about">Our Story</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <a href="index.html#reservations" class="nav-reserve">Reserve a Table</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== MENU HERO ==================== -->
+  <section class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="container">
+      <div class="menu-hero-content reveal">
+        <span class="section-label">Seasonal Collection</span>
+        <h1 class="section-title">Our <em>Menu</em></h1>
+        <div class="ornament">
+          <span class="ornament-icon"><i class="fas fa-diamond"></i></span>
+        </div>
+        <p class="section-subtitle" style="margin: 0 auto; text-align: center;">
+          A curated journey through flavors, crafted with passion and the finest seasonal ingredients
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU FILTERS ==================== -->
+  <section class="menu-filters">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Main Courses</button>
+        <button class="filter-btn" data-filter="seafood">Seafood</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Cocktails &amp; Wine</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU SECTIONS ==================== -->
+  <main class="menu-main section-padding">
+    <div class="container">
+
+      <!-- Starters -->
+      <div class="menu-category" data-category="starters">
+        <div class="category-header reveal">
+          <div class="category-number">01</div>
+          <div>
+            <span class="section-label">First Course</span>
+            <h2 class="category-title">Starters</h2>
+          </div>
+          <div class="category-line"></div>
+        </div>
+
+        <div class="menu-items-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Tartare">
+                <i class="fas fa-lemon"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Yellowfin Tuna Tartare</h3>
+                <span class="menu-item-price">$32</span>
+              </div>
+              <p>Avocado mousse, sesame tuile, ponzu gel, micro shiso, crispy shallots</p>
+              <div class="menu-item-tags">
+                <span class="tag">Gluten-Free</span>
+                <span class="tag">Chef's Pick</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Burrata">
+                <i class="fas fa-cheese"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Heirloom Tomato &amp; Burrata</h3>
+                <span class="menu-item-price">$26</span>
+              </div>
+              <p>Aged balsamic, basil oil, fleur de sel, toasted pine nuts, microgreens</p>
+              <div class="menu-item-tags">
+                <span class="tag">Vegetarian</span>
+                <span class="tag">Seasonal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Foie Gras">
+                <i class="fas fa-bread-slice"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Seared Foie Gras</h3>
+                <span class="menu-item-price">$38</span>
+              </div>
+              <p>Brioche toast, fig compote, port wine reduction, candied walnuts</p>
+              <div class="menu-item-tags">
+                <span class="tag">Signature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Soup">
+                <i class="fas fa-bowl-food"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Truffle Veloute</h3>
+                <span class="menu-item-price">$28</span>
+              </div>
+              <p>Black truffle, crème fraîche, chive oil, parmigiano crisp, gold leaf</p>
+              <div class="menu-item-tags">
+                <span class="tag">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Courses -->
+      <div class="menu-category" data-category="mains">
+        <div class="category-header reveal">
+          <div class="category-number">02</div>
+          <div>
+            <span class="section-label">Second Course</span>
+            <h2 class="category-title">Main Courses</h2>
+          </div>
+          <div class="category-line"></div>
+        </div>
+
+        <div class="menu-items-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Wagyu">
+                <i class="fas fa-drumstick-bite"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Pan-Seared A5 Wagyu</h3>
+                <span class="menu-item-price">$128</span>
+              </div>
+              <p>Black truffle jus, roasted bone marrow, seasonal root vegetables, aged balsamic reduction</p>
+              <div class="menu-item-tags">
+                <span class="tag">Signature</span>
+                <span class="tag">Chef's Choice</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Duck">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Roasted Duck Breast</h3>
+                <span class="menu-item-price">$62</span>
+              </div>
+              <p>Cherry gastrique, confit leg croquette, braised endive, duck fat potatoes</p>
+              <div class="menu-item-tags">
+                <span class="tag">Popular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Lamb">
+                <i class="fas fa-pepper-hot"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Herb-Crusted Rack of Lamb</h3>
+                <span class="menu-item-price">$78</span>
+              </div>
+              <p>Rosemary jus, pommes dauphine, ratatouille provençale, mint gremolata</p>
+              <div class="menu-item-tags">
+                <span class="tag">Gluten-Free</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Risotto">
+                <i class="fas fa-seedling"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Wild Mushroom Risotto</h3>
+                <span class="menu-item-price">$44</span>
+              </div>
+              <p>Porcini, chanterelle, truffle oil, aged parmesan, fresh herbs</p>
+              <div class="menu-item-tags">
+                <span class="tag">Vegetarian</span>
+                <span class="tag">Popular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Filet">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Prime Filet Mignon</h3>
+                <span class="menu-item-price">$86</span>
+              </div>
+              <p>Béarnaise sauce, truffle mashed potatoes, grilled asparagus, red wine demi-glace</p>
+              <div class="menu-item-tags">
+                <span class="tag">Gluten-Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seafood -->
+      <div class="menu-category" data-category="seafood">
+        <div class="category-header reveal">
+          <div class="category-number">03</div>
+          <div>
+            <span class="section-label">From the Sea</span>
+            <h2 class="category-title">Seafood</h2>
+          </div>
+          <div class="category-line"></div>
+        </div>
+
+        <div class="menu-items-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Lobster">
+                <i class="fas fa-shrimp"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Lobster Thermidor</h3>
+                <span class="menu-item-price">$96</span>
+              </div>
+              <p>Maine lobster, cognac cream, gruyere gratin, garden herbs, saffron bisque</p>
+              <div class="menu-item-tags">
+                <span class="tag">Signature</span>
+                <span class="tag">Popular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Sea Bass">
+                <i class="fas fa-fish"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Chilean Sea Bass</h3>
+                <span class="menu-item-price">$68</span>
+              </div>
+              <p>Miso glaze, bok choy, shiitake mushrooms, ginger-lemongrass broth</p>
+              <div class="menu-item-tags">
+                <span class="tag">Gluten-Free</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Scallops">
+                <i class="fas fa-circle-dot"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Diver Scallops</h3>
+                <span class="menu-item-price">$54</span>
+              </div>
+              <p>Cauliflower purée, golden raisins, brown butter, capers, micro herbs</p>
+              <div class="menu-item-tags">
+                <span class="tag">Chef's Pick</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Oysters">
+                <i class="fas fa-water"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Oysters Rockefeller</h3>
+                <span class="menu-item-price">$36</span>
+              </div>
+              <p>Six select East Coast oysters, spinach, Pernod, hollandaise, herbed breadcrumbs</p>
+              <div class="menu-item-tags">
+                <span class="tag">Classic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category" data-category="desserts">
+        <div class="category-header reveal">
+          <div class="category-number">04</div>
+          <div>
+            <span class="section-label">Sweet Finale</span>
+            <h2 class="category-title">Desserts</h2>
+          </div>
+          <div class="category-line"></div>
+        </div>
+
+        <div class="menu-items-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Chocolate Sphere">
+                <i class="fas fa-cake-candles"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Gold Leaf Chocolate Sphere</h3>
+                <span class="menu-item-price">$42</span>
+              </div>
+              <p>Valrhona dark chocolate, passion fruit coulis, vanilla bean gelato, edible gold</p>
+              <div class="menu-item-tags">
+                <span class="tag">Signature</span>
+                <span class="tag">New</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Soufflé">
+                <i class="fas fa-cloud"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Grand Marnier Soufflé</h3>
+                <span class="menu-item-price">$28</span>
+              </div>
+              <p>Orange zest, crème anglaise, candied kumquats — allow 20 minutes</p>
+              <div class="menu-item-tags">
+                <span class="tag">Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Crème Brûlée">
+                <i class="fas fa-fire-flame-simple"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Tahitian Vanilla Crème Brûlée</h3>
+                <span class="menu-item-price">$22</span>
+              </div>
+              <p>Madagascar vanilla bean, caramelized sugar crust, fresh berries, tuile cookie</p>
+              <div class="menu-item-tags">
+                <span class="tag">Gluten-Free</span>
+                <span class="tag">Popular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Tart">
+                <i class="fas fa-stroopwafel"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Seasonal Fruit Tart</h3>
+                <span class="menu-item-price">$24</span>
+              </div>
+              <p>Pâte sablée, pastry cream, market fruits, apricot glaze, whipped mascarpone</p>
+              <div class="menu-item-tags">
+                <span class="tag">Seasonal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category" data-category="drinks">
+        <div class="category-header reveal">
+          <div class="category-number">05</div>
+          <div>
+            <span class="section-label">Libations</span>
+            <h2 class="category-title">Cocktails &amp; Wine</h2>
+          </div>
+          <div class="category-line"></div>
+        </div>
+
+        <div class="menu-items-grid">
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Cocktail">
+                <i class="fas fa-martini-glass-citrus"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>The Aurelian</h3>
+                <span class="menu-item-price">$24</span>
+              </div>
+              <p>Aged bourbon, honey lavender syrup, Angostura bitters, gold dust rim</p>
+              <div class="menu-item-tags">
+                <span class="tag">House Special</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Champagne">
+                <i class="fas fa-champagne-glasses"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Dom Pérignon Vintage</h3>
+                <span class="menu-item-price">$85</span>
+              </div>
+              <p>Glass pour — elegant, toasty notes with citrus and mineral complexity</p>
+              <div class="menu-item-tags">
+                <span class="tag">Premium</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Wine">
+                <i class="fas fa-wine-glass"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Opus One, Napa Valley</h3>
+                <span class="menu-item-price">$120</span>
+              </div>
+              <p>Glass pour — rich, velvety Bordeaux-style blend with dark fruit and spice</p>
+              <div class="menu-item-tags">
+                <span class="tag">Sommelier's Pick</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item reveal">
+            <div class="menu-item-image">
+              <div class="img-placeholder dish" data-label="Cocktail">
+                <i class="fas fa-glass-water-droplet"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3>Midnight Garden</h3>
+                <span class="menu-item-price">$22</span>
+              </div>
+              <p>Hendrick's gin, elderflower, cucumber, rose water, sparkling water, edible flowers</p>
+              <div class="menu-item-tags">
+                <span class="tag">Refreshing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef's Tasting Menu -->
+      <div class="tasting-menu reveal">
+        <div class="tasting-bg"></div>
+        <div class="tasting-content">
+          <span class="section-label">The Ultimate Experience</span>
+          <h2 class="section-title">Chef's <em>Tasting Menu</em></h2>
+          <div class="divider divider-center"></div>
+          <p class="section-subtitle" style="margin: 0 auto; text-align: center;">
+            An 8-course journey through Chef Marcus's most inspired creations,
+            with optional wine pairings selected by our sommelier.
+          </p>
+          <div class="tasting-prices">
+            <div class="tasting-option">
+              <span class="tasting-label">Tasting Menu</span>
+              <span class="tasting-price">$195</span>
+              <span class="tasting-note">per person</span>
+            </div>
+            <div class="tasting-divider"></div>
+            <div class="tasting-option">
+              <span class="tasting-label">With Wine Pairing</span>
+              <span class="tasting-price">$295</span>
+              <span class="tasting-note">per person</span>
+            </div>
+          </div>
+          <a href="index.html#reservations" class="btn btn-primary" style="margin-top: 40px;">Reserve for Tasting</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            Aurelian
+            <span>Fine Dining</span>
+          </div>
+          <p>An exquisite culinary journey where passion meets perfection. Every dish tells a story.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="index.html#reservations">Reservations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dining</h4>
+          <ul>
+            <li><a href="menu.html">Dinner Menu</a></li>
+            <li><a href="menu.html">Wine Collection</a></li>
+            <li><a href="menu.html">Chef's Tasting</a></li>
+            <li><a href="#">Private Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Inquiries</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aurelian Fine Dining. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
